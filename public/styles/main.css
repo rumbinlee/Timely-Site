@@ -1,0 +1,166 @@
+@font-face {
+    font-family: 'Norwester';
+    src: url('../fonts/Norwester/Norwester.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Montserrat Bolder';
+    src: url('../fonts/Montserrat/static/Montserrat-Black.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Montserrat Regular';
+    src: url('../fonts/Montserrat/static/Montserrat-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Whitney Regular';
+    src: url('../fonts/Whitney/whitneymedium.otf') format('opentype');
+}
+
+body {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+    width: 100%;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+    z-index: 1;
+}
+
+h1 {
+    font-family: 'Norwester';
+    color: #f78620;
+    font-size: 60px;
+    user-select: none;
+    cursor: default;
+    margin: 0;
+}
+
+div.toolbar {
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    background-color: #101e3f;
+}
+
+div.toolbar-button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+div.toolbar-main-button {
+    background: #fff;
+    font-family: 'Montserrat Regular';
+    border-radius: 20px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    transition: 0.3s;
+    margin: 10px;
+}
+
+div.toolbar-main-button:hover {
+    box-shadow: 0 0 10px #fff;
+}
+
+p.description {
+    width: 400px;
+    margin: 30px;
+    font-family: 'Montserrat Regular';
+    font-size: 20px;
+    color: #000;
+}
+
+div.page-section {
+    flex: 1;
+    border-right: 1px solid #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.page-section-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+div.main-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background-color: #f78620;
+    border-radius: 30px;
+    padding: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
+    width: 200px;
+    margin-right: 10px;
+    margin-left: 10px;
+    font-size: 22px;
+    font-family: 'Norwester';
+    z-index: 1;
+    transition: 0.2s;
+}
+
+div.main-button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+div.main-button-pane {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+div.toolbar-button {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    height: 40px;
+    width: 100px;
+    font-family: 'Norwester';
+    color: #fff;
+    user-select: none;
+    cursor: default;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+p.information {
+    font-family: 'Montserrat Regular';
+    color: #fff;
+    line-height: 2.0;
+}
+
+div.toolbar-button:hover {
+    text-decoration: underline;
+}
+
+div.background {
+    background-color: #101E3F;
+    width: 100vw;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='720' preserveAspectRatio='none' viewBox='0 0 1440 720'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1083%26quot%3b)' fill='none'%3e%3crect width='1440' height='720' x='0' y='0' fill='rgba(16%2c 30%2c 63%2c 1)'%3e%3c/rect%3e%3cpath d='M 0%2c135 C 96%2c117.4 288%2c27 480%2c47 C 672%2c67 768%2c225.8 960%2c235 C 1152%2c244.2 1344%2c121.4 1440%2c93L1440 720L0 720z' fill='rgba(24%2c 46%2c 97%2c 1)'%3e%3c/path%3e%3cpath d='M 0%2c474 C 48%2c442.2 144%2c319.6 240%2c315 C 336%2c310.4 384%2c444.4 480%2c451 C 576%2c457.6 624%2c360 720%2c348 C 816%2c336 864%2c391.2 960%2c391 C 1056%2c390.8 1104%2c347.8 1200%2c347 C 1296%2c346.2 1392%2c379 1440%2c387L1440 720L0 720z' fill='rgba(30%2c 59%2c 127%2c 1)'%3e%3c/path%3e%3cpath d='M 0%2c680 C 32%2c644.6 96%2c500.6 160%2c503 C 224%2c505.4 256%2c675 320%2c692 C 384%2c709 416%2c606.2 480%2c588 C 544%2c569.8 576%2c613.4 640%2c601 C 704%2c588.6 736%2c516.6 800%2c526 C 864%2c535.4 896%2c645 960%2c648 C 1024%2c651 1056%2c534 1120%2c541 C 1184%2c548 1216%2c678.6 1280%2c683 C 1344%2c687.4 1408%2c587 1440%2c563L1440 720L0 720z' fill='rgba(247%2c 134%2c 32%2c 1)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1083'%3e%3crect width='1440' height='720' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+    background-repeat:round;
+}
+
+div.performance {
+
+}
